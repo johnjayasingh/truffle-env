@@ -4,7 +4,7 @@ const argv = require('minimist')(process.argv.slice(2));
 
 require('dotenv').config();
 
-module.exports = (basePath = __dirname) => {
+module.exports = (baseDir = __dirname) => {
 
     const environment = process.env.TRUFFLE_ENV || argv.env || 'development';
 
@@ -15,7 +15,7 @@ module.exports = (basePath = __dirname) => {
 
     const manifestDir = '.openzeppelin';
     const buildDir = 'build';
-    const basePath = join(__dirname, buildDir);
+    const basePath = join(baseDir, buildDir);
     const outputFolder = join(basePath, environment);
     const manifestBackupPath = join(outputFolder, manifestDir);
 
