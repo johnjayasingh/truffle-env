@@ -1,6 +1,6 @@
 {
   "name": "truffle-backup",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "truffle-backup is a simple wrapper on top of dotenv and to be used within truffle-config.js which brings us capablity to do backups of our truffle migrations. This is mainly useful for the truffle upgradable projects and backups here are copied inside the same project directory. ",
   "main": "index.js",
   "scripts": {
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/johnjayasingh/-truffle-env.git"
+    "url": "git+ssh://git@github.com/johnjayasingh/truffle-env.git"
   },
   "keywords": [
     "truffle",
@@ -18,9 +18,9 @@
   "author": "John Jayasingh S",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/johnjayasingh/-truffle-env/issues"
+    "url": "https://github.com/johnjayasingh/truffle-env/issues"
   },
-  "homepage": "https://github.com/johnjayasingh/-truffle-env#readme",
+  "homepage": "https://github.com/johnjayasingh/truffle-env#readme",
   "dependencies": {
     "dotenv": "^16.0.0",
     "minimist": "^1.2.6"
