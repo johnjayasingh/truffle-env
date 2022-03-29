@@ -1,4 +1,4 @@
-const { contracts_build_directory } = require('./index');
+const { contracts_build_directory } = require('./index')(__dirname);
 
 module.exports = {
   contracts_build_directory,
