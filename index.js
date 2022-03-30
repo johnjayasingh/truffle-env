@@ -1,5 +1,5 @@
 const { join } = require("path");
-const { mkdirSync, existsSync, renameSync, unlinkSync } = require("fs");
+const { mkdirSync, existsSync, renameSync, unlinkSync, readdirSync } = require("fs");
 const argv = require('minimist')(process.argv.slice(2));
 
 require('dotenv').config();
@@ -21,7 +21,11 @@ module.exports = (baseDir = __dirname) => {
 
     if (process.env.RESET || argv.reset) {
         if (existsSync(manifestDir)) {
-            unlinkSync(manifestDir);
+            const files = readdirSync(manifestDir)
+            for (const file of files) {
+                console.log(file + ' : File Deleted Successfully.');
+                unlinkSync(join(manifestDir,file));
+            }
         }
         console.log("Reset manifest directory. Continuing to fresh migration.");
     }
