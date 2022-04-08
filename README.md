@@ -1,9 +1,5 @@
 
-# <img src="https://trufflesuite.com/img/truffle-logo-dark.svg"  width="200"> Backup Environments
-
-
-
-Truffle is a development environment, testing framework and asset pipeline for Ethereum, aiming to make life as an Ethereum developer easier.
+# Truffle Unofficial Backup Environments
 
 In a truffle upgradable project the core files required to make the contract upgradable are build and .openzeppelin folder. Currently the issue with this is we will not be able to deploy a new copy on the same network eg test net without either upgrading the contract or removing old deployment. but results in the contract outputs not being maintained. also truffle does not have the concept of multiple environment for same network. 
 
